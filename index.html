@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mehdi Tadjer</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p>Mehdi Tadjer</p>
+        <nav>
+            <div id="btn-conteneur">
+                <div id="btn-nav">
+                    <div id="btn-barre"></div>
+                </div>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="pages/profil.html">Profil</a></li>
+                    <li><a href="pdf/mehdi.tadjer.dev.fullstackjs.pdf" target="blink">CV</a></li>
+                </ul>
+                <div id="reseaux-sociaux">
+                    <a href="https://www.linkedin.com/in/mehditadjer/"><img src="images/svg/LinkedIn.svg" alt=""></a>
+                    <a href="https://www.whire.me/@mehdi_tadjer"><img src="images/svg/Whire.svg" alt=""></a>
+                    <a href="mailto:mehdi.tadjer@outlook.com"><img src="images/svg/Mail2.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Jeu 'Les Envahisseurs de l'Espace'</h1>
+        <div id="regles-jeu">
+            <h2>Règles du jeu :</h2>
+            <p>Atteignez <span class="bold">5000 points</span> afin de débloquer l'accès à mon CV intéractif.</p>
+            <p><span class="bold">ATTENTION !</span> Une fois les <span class="bold">3000 points</span> atteins, la difficulté augmentera.</p>
+            <p>Toutefois, si vous ne voulez pas jouer, vous pouvez accéder à la page Profil ainsi qu'à mon CV au format pdf depuis le menu situé en haut à gauche</p>
+            <h2>Comment jouer ?</h2>
+            <p>Pour déplacer le vaisseau, utiliser les touches directionnelles gauche et droite : <span class = "touches"><</span> / <span class = "touches">></span> </p>
+            <p>Pour tirer sur les envahisseurs, utiliser la touche espace : <span class = "touches espace"></span></p>
+            <p>Chaque envahisseur vaincu à l'aide du canon à laser du vaisseau vous rapportera <span class="bold">25 points</span></p>
+            <p>De plus, les compétences récupérées à l'aide du vaisseau vous rapporterons <span class="bold">100 points</span> supplémentaires</p>
+            <p>BONNE CHANCE !</p>
+        </div>
+        <section id="jeu-conteneur">
+            <div>
+                <img src="images/Sans-titre-1.png" alt="">
+            </div>
+            <div class="canvas-conteneur">
+                <canvas></canvas>
+                <p>Appuyez sur la touche espace pour commencer a jouer</p>
+                <p id="score-actuel"></p>
+                <p id="meilleur-score"></p>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/jeu.js"></script>
+</body>
+</html>
